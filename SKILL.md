@@ -9,9 +9,7 @@ metadata:
 
 # Competitive Programming Skills
 
-A structured and efficiency-driven knowledge base for mastering competitive programming.
-
-This repository emphasizes algorithmic reasoning, core data structures, implementation patterns, and writing optimized C++23 code under contest constraints.
+A structured and efficiency-driven knowledge base for mastering competitive programming. This repository emphasizes algorithmic reasoning, core data structures, implementation patterns, and writing optimized C++23 code under contest constraints.
 
 ## Objectives
 
@@ -35,19 +33,6 @@ This repository emphasizes algorithmic reasoning, core data structures, implemen
   - Do not create a `solve()` function if the logic fits clearly inside `main()`.
 - Avoid unnecessary variables.
   - Do not store intermediate results if they are used only once.
-
-**Prefer:**
-
-```cpp
-cout << b + c << "\n";
-```
-
-**Instead of:**
-
-```cpp
-int a = b + c;
-cout << a << "\n";
-```
 
 ## Naming & Structure Guidelines
 
@@ -147,3 +132,4 @@ Performance over abstraction.
 Correctness over style.
 
 Build intuition. Remove noise. Optimize thinking.
+
