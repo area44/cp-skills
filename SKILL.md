@@ -132,4 +132,3 @@ Performance over abstraction.
 Correctness over style.
 
 Build intuition. Remove noise. Optimize thinking.
-

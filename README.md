@@ -5,4 +5,3 @@ A collection of competitive programming concepts, techniques, and implementation
 ## LICENSE
 
 This project is licensed under the MIT License.
-
