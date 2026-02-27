@@ -15,16 +15,20 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
 
+      - name: Setup PMPM
+        uses: pnpm/action-setup@v4
+
       - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
           node-version: lts/*
+          cache: pnpm
       
-      - name: Install oxfmt
-        run: npm install --save-dev oxfmt
+      - name: Install dependencies
+        run: pnpm install --no-frozen-lockfile
       
       - name: Run formatter
-        run: npx oxfmt
+        run: pnpm run fmt
       
       - name: Run autofix.ci
         uses: autofix-ci/action@v1

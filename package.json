@@ -1,5 +1,21 @@
 {
+  "name": "@area44/cp-skills",
+  "version": "26.02.28",
+  "description": "A collection of competitive programming concepts, techniques, and implementations designed to build strong algorithmic reasoning.",
+  "license": "MIT",
+  "author": {
+    "name": "AREA44",
+    "url": "https://github.com/area44"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/area44/cp-skills"
+  },
+  "scripts": {
+    "fmt": "oxfmt"
+  },
   "devDependencies": {
     "oxfmt": "^0.35.0"
-  }
+  },
+  "packageManager": "pnpm@10.30.3"
 }
