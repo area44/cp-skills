@@ -9,15 +9,16 @@ metadata:
 
 # Competitive Programming Skills
 
-A structured and performance-oriented knowledge base for mastering competitive programming.
-This repository focuses on algorithmic thinking, data structures, implementation patterns, and writing efficient C++23 code under contest constraints.
+A structured and efficiency-driven knowledge base for mastering competitive programming.
 
-The goal is to build:
+This repository emphasizes algorithmic reasoning, core data structures, implementation patterns, and writing optimized C++23 code under contest constraints.
 
-- Strong algorithmic intuition.
-- Clean and minimal implementation habits.
-- High-performance coding discipline.
-- Fast and accurate problem-solving skills.
+## Objectives
+
+- Develop strong algorithmic intuition.
+- Build clean and minimal implementation habits.
+- Maintain high-performance coding discipline.
+- Improve speed and accuracy under time pressure.
 
 # Language & Coding Standards
 
@@ -31,65 +32,86 @@ The goal is to build:
 
 - Do not include comments in final submission code.
 - Avoid unnecessary abstractions.
-  - Do not create a `solve()` function if everything fits clearly inside `main()`.
+  - Do not create a `solve()` function if the logic fits clearly inside `main()`.
 - Avoid unnecessary variables.
-  - Do not store intermediate values if they are used only once.
-  - Example prefer:
-    ```cpp
-    cout << b + c << "\n";
-    ```
-    instead of:
-    ```cpp
-    int a = b + c;
-    cout << a << "\n";
-    ```
+  - Do not store intermediate results if they are used only once.
 
-### Naming & Structure
+**Prefer:**
 
-- Use simple variable names.
-  - Prefer `var_a` over `varA`.
+```cpp
+cout << b + c << "\n";
+```
+
+**Instead of:**
+
+```cpp
+int a = b + c;
+cout << a << "\n";
+```
+
+## Naming & Structure Guidelines
+
+### Variables
+
+- Use `camelCase`.
+- Keep names simple, clear, and descriptive.
+
+### Functions
+
+- Use `snake_case`.
+- Function names must begin with a verb.
+- Clearly describe the action performed.
+
+### Constants
+
+- Use `ALL_CAPS` with underscores.
+
+### Code Structure
+
 - Keep logic linear and readable.
 - Avoid deep nesting when possible.
 - Prefer early returns to reduce indentation.
-- Minimize global variables (except constants and large arrays).
+- Minimize global variables (allowed only for constants and large shared arrays).
 
-### Loop Preferences
+## Loop Preferences
 
 - Prefer range-based loops.
   - Use `for (auto &x : container)` when modifying elements or avoiding copies.
-  - Use `for (auto x : container)` when working with read-only values.
+  - Use `for (auto x : container)` for read-only access.
 
-### STL Discipline
+## STL Discipline
 
 - Prefer `vector` over `array`.
-- Prefer `vector` over `set` / `map` unless ordered or logarithmic operations are required.
-- Prefer `sort()` over dynamically maintaining ordered containers.
+- Prefer `vector` over `set` or `map` unless ordering or logarithmic operations are required.
+- Prefer `sort()` over maintaining dynamically ordered containers.
 - Avoid `multiset` unless strictly necessary.
 - Use `reserve()` when size is known in advance.
-- Prefer `emplace_back()` when constructing elements in-place.
+- Prefer `emplace_back()` for in-place construction.
 - Avoid unnecessary copying of large structures.
   - Prefer `const vector<int>&` over `vector<int>` when passing arguments.
 
-### I/O Rules
+## I/O Rules
 
 - Use `cin` and `cout`.
 - Disable synchronization:
-  ```cpp
-  ios::sync_with_stdio(false);
-  cin.tie(nullptr);
-  ```
+
+```cpp
+ios::sync_with_stdio(false);
+cin.tie(nullptr);
+```
+
 - Use `"\n"` instead of `endl`.
 
 # Performance Discipline
 
-- Always estimate time complexity before coding.
+- Estimate time complexity before coding.
 - Target complexity guidelines:
   - `O(n)` or `O(n log n)` for `n ≤ 2e5`
   - `O(n^2)` only if `n ≤ 2000`
   - `O(2^n)` only if `n ≤ 20`
 - Preallocate memory when possible.
 - Avoid resizing containers inside loops.
-- Use static arrays when size is fixed and performance is critical.
+- Use static arrays when size is fixed and performance-critical.
 
 # Compilation Template
 
@@ -113,15 +135,15 @@ int main() {
 
 # Competitive Programming Philosophy
 
-Competitive programming is about:
+Competitive programming requires:
 
-- Constraint analysis.
-- Pattern recognition.
-- Reducing brute force into structured logic.
+- Careful constraint analysis.
+- Strong pattern recognition.
+- Transforming brute force into structured logic.
 - Writing correct code quickly under pressure.
 
-Clarity > cleverness.
-Performance > abstraction.
-Correctness > style.
+Clarity over cleverness.
+Performance over abstraction.
+Correctness over style.
 
-Build intuition. Eliminate noise. Optimize thinking.
+Build intuition. Remove noise. Optimize thinking.
