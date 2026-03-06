@@ -14,87 +14,87 @@ This repository emphasizes algorithmic reasoning, core data structures, implemen
 
 # Objectives
 
-* Develop strong algorithmic intuition.
-* Build clean and minimal implementation habits.
-* Maintain high-performance coding discipline.
-* Improve speed and accuracy under time pressure.
+- Develop strong algorithmic intuition.
+- Build clean and minimal implementation habits.
+- Maintain high-performance coding discipline.
+- Improve speed and accuracy under time pressure.
 
 # Language & Coding Standards
 
 ## Language Standard
 
-* Use **Kotlin (JVM)**.
-* Prefer latest stable Kotlin version allowed by the judge.
-* Target JVM 17+ when possible.
+- Use **Kotlin (JVM)**.
+- Prefer latest stable Kotlin version allowed by the judge.
+- Target JVM 17+ when possible.
 
 # Code Style Guidelines
 
 ## Minimalism First
 
-* Do not include comments in final submission code.
-* Avoid unnecessary abstractions.
-  * Do not create extra functions if logic fits clearly inside `main()`.
-* Avoid unnecessary variables.
-  * Do not store intermediate results if they are used only once.
+- Do not include comments in final submission code.
+- Avoid unnecessary abstractions.
+  - Do not create extra functions if logic fits clearly inside `main()`.
+- Avoid unnecessary variables.
+  - Do not store intermediate results if they are used only once.
 
 # Naming & Structure Guidelines
 
 ## Variables
 
-* Use `camelCase`.
-* Keep names simple, clear, and descriptive.
+- Use `camelCase`.
+- Keep names simple, clear, and descriptive.
 
 ## Functions
 
-* Use `snake_case`.
-* Function names must begin with a verb.
-* Clearly describe the action performed.
+- Use `snake_case`.
+- Function names must begin with a verb.
+- Clearly describe the action performed.
 
 ## Constants
 
-* Use `UPPER_CASE_WITH_UNDERSCORES`.
-* Prefer `const val` for compile-time constants.
+- Use `UPPER_CASE_WITH_UNDERSCORES`.
+- Prefer `const val` for compile-time constants.
 
 # Code Structure
 
-* Keep logic linear and readable.
-* Avoid deep nesting.
-* Prefer early returns.
-* Minimize global variables (allowed only for constants or large shared arrays).
+- Keep logic linear and readable.
+- Avoid deep nesting.
+- Prefer early returns.
+- Minimize global variables (allowed only for constants or large shared arrays).
 
 # Loop Preferences
 
-* Prefer `repeat(n)` when index not needed.
-* Prefer `for (i in 0 until n)` for index-based loops.
-* Prefer direct iteration:
+- Prefer `repeat(n)` when index not needed.
+- Prefer `for (i in 0 until n)` for index-based loops.
+- Prefer direct iteration:
 
 ```kotlin
 for (x in list)
 ```
 
-* Avoid unnecessary higher-order functions (`map`, `filter`) in tight loops.
+- Avoid unnecessary higher-order functions (`map`, `filter`) in tight loops.
 
 # Collection Discipline
 
-* Prefer `IntArray`, `LongArray` over `Array<Int>` for performance.
-* Prefer arrays over lists in performance-critical sections.
-* Prefer `MutableList` only when dynamic resizing is required.
-* Prefer sorting via:
+- Prefer `IntArray`, `LongArray` over `Array<Int>` for performance.
+- Prefer arrays over lists in performance-critical sections.
+- Prefer `MutableList` only when dynamic resizing is required.
+- Prefer sorting via:
 
 ```kotlin
 array.sort()
 ```
 
-* Avoid `sorted()` (creates copy).
-* Avoid `HashMap`/`HashSet` unless necessary.
-* Prefer arrays for frequency counting when bounds are known.
-* Preallocate with:
+- Avoid `sorted()` (creates copy).
+- Avoid `HashMap`/`HashSet` unless necessary.
+- Prefer arrays for frequency counting when bounds are known.
+- Preallocate with:
 
 ```kotlin
 val arr = IntArray(n)
 ```
 
-* Avoid resizing inside loops.
+- Avoid resizing inside loops.
 
 # I/O Rules (CRITICAL FOR KOTLIN)
 
@@ -127,8 +127,8 @@ val x = st.nextToken().toInt()
 
 Avoid:
 
-* `readLine()!!.split(" ")`
-* `Scanner`
+- `readLine()!!.split(" ")`
+- `Scanner`
 
 # Performance Discipline
 
@@ -136,20 +136,20 @@ Always estimate time complexity before coding.
 
 ## Target Complexity Guidelines
 
-* `O(n)` or `O(n log n)` for `n ≤ 2e5`
-* `O(n^2)` only if `n ≤ 2000`
-* `O(2^n)` only if `n ≤ 20`
+- `O(n)` or `O(n log n)` for `n ≤ 2e5`
+- `O(n^2)` only if `n ≤ 2000`
+- `O(2^n)` only if `n ≤ 20`
 
 ## Performance Rules Specific to Kotlin
 
-* Prefer `IntArray` over `MutableList<Int>`.
-* Avoid boxing (`Int?`, `List<Int>` in hot paths).
-* Avoid recursion (stack overflow risk).
-* Avoid lambdas in tight loops.
-* Avoid sequence APIs (`asSequence()`).
-* Use `StringBuilder` if constructing large output.
-* Use `repeat(t)` instead of `for (i in 0 until t)` when index unused.
-* Use primitive math (`kotlin.math`) only when needed.
+- Prefer `IntArray` over `MutableList<Int>`.
+- Avoid boxing (`Int?`, `List<Int>` in hot paths).
+- Avoid recursion (stack overflow risk).
+- Avoid lambdas in tight loops.
+- Avoid sequence APIs (`asSequence()`).
+- Use `StringBuilder` if constructing large output.
+- Use `repeat(t)` instead of `for (i in 0 until t)` when index unused.
+- Use primitive math (`kotlin.math`) only when needed.
 
 # Kotlin Compilation Template
 
@@ -174,10 +174,10 @@ fun main() {
 
 Competitive programming requires:
 
-* Careful constraint analysis.
-* Strong pattern recognition.
-* Transforming brute force into structured logic.
-* Writing correct code quickly under pressure.
+- Careful constraint analysis.
+- Strong pattern recognition.
+- Transforming brute force into structured logic.
+- Writing correct code quickly under pressure.
 
 Clarity over cleverness. Performance over abstraction. Correctness over style.
 
