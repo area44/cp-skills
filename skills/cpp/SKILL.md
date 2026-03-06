@@ -1,10 +1,10 @@
 ---
-name: cp-skills
+name: cp-skills-cpp
 description: A structured competitive programming knowledge base focused on algorithmic thinking, data structures, and high-performance C++ implementations.
 license: MIT
 metadata:
   - author: area44
-  - version: "2026.02.26"
+  - version: "26.03.06"
 ---
 
 # Competitive Programming Skills
@@ -107,8 +107,8 @@ using namespace std;
 using ll = long long;
 using i128 = __int128_t;
 
-constexpr ll INF = 4e18;
-constexpr int MOD = 1e9 + 7;
+constexpr ll INF = LLONG_MAX;
+constexpr int MOD = 998244353;
 
 int main() {
   ios::sync_with_stdio(false);
@@ -127,8 +127,6 @@ Competitive programming requires:
 - Transforming brute force into structured logic.
 - Writing correct code quickly under pressure.
 
-Clarity over cleverness.
-Performance over abstraction.
-Correctness over style.
+Clarity over cleverness. Performance over abstraction. Correctness over style.
 
 Build intuition. Remove noise. Optimize thinking.

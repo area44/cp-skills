@@ -1,53 +1,6 @@
-# ----------------------------
-# C / C++ / Native build files
-# ----------------------------
-
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Debug information files
-*.dwo
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Fortran module files
-*.mod
-*.smod
-
-# Executables
-*.exe
-*.out
-*.app
-
-
-# ----------------------------
-# Node / JavaScript
-# ----------------------------
+# OS files
+.DS_Store
+Thumbs.db
 
 # Dependencies
 node_modules/
@@ -67,7 +20,3 @@ coverage/
 .env
 .env.local
 .env.*.local
-
-# OS files
-.DS_Store
-Thumbs.db
