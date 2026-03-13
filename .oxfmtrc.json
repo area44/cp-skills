@@ -10,6 +10,6 @@
     "**/.github",
     "**/.next",
     "**/.astro",
-    "**/.netlify",
-  ],
+    "**/.netlify"
+  ]
 }

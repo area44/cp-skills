@@ -22,13 +22,12 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: lts/*
-          cache: pnpm
       
       - name: Install dependencies
-        run: pnpm install --no-frozen-lockfile
+        run: pnpm add -D oxfmt
       
       - name: Run formatter
-        run: pnpm run fmt
+        run: pnpm dlx oxfmt
       
       - name: Run autofix.ci
         uses: autofix-ci/action@v1
