@@ -141,6 +141,7 @@ cin.tie(nullptr);
 using namespace std;
 
 using ll = long long;
+using ull = unsigned long long;
 using i128 = __int128_t;
 
 constexpr ll INF = LLONG_MAX;
