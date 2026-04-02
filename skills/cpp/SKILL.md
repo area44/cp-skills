@@ -90,75 +90,75 @@ struct Node {
 
 // Prefer
 vector<int> leftChild, rightChild, value;
-````
+```
 
 ### Loop Preferences
 
-* Prefer range-based loops.
-* Use `for (auto &x : container)` when modifying elements.
-* Use `for (auto x : container)` for read-only access.
+- Prefer range-based loops.
+- Use `for (auto &x : container)` when modifying elements.
+- Use `for (auto x : container)` for read-only access.
 
 ### STL Discipline
 
-* Prefer `vector` over other containers.
-* Use `set` / `map` only when ordering or logarithmic operations are required.
-* Prefer `sort()` over maintaining ordered containers.
-* Avoid `multiset` unless strictly necessary.
-* Use `reserve()` when size is known.
-* Prefer `emplace_back()`.
-* Avoid copying large structures.
-* Prefer `const vector<int>&` when passing arguments.
+- Prefer `vector` over other containers.
+- Use `set` / `map` only when ordering or logarithmic operations are required.
+- Prefer `sort()` over maintaining ordered containers.
+- Avoid `multiset` unless strictly necessary.
+- Use `reserve()` when size is known.
+- Prefer `emplace_back()`.
+- Avoid copying large structures.
+- Prefer `const vector<int>&` when passing arguments.
 
 ## I/O Rules
 
-* Use `cin` and `cout`.
-* Disable synchronization:
+- Use `cin` and `cout`.
+- Disable synchronization:
 
 ```cpp
 ios::sync_with_stdio(false);
 cin.tie(nullptr);
 ```
 
-* Use `"\n"` instead of `endl`.
+- Use `"\n"` instead of `endl`.
 
 ### Input Handling Discipline
 
-* Do **not** use defensive input patterns like:
+- Do **not** use defensive input patterns like:
 
 ```cpp
 if (!(cin >> t)) return 0;
 ```
 
-* Do **not** check for EOF or invalid input.
-* Assume input always follows the problem statement.
-* Read input directly and explicitly.
+- Do **not** check for EOF or invalid input.
+- Assume input always follows the problem statement.
+- Read input directly and explicitly.
 
 # Performance Discipline
 
-* Estimate time complexity before coding.
+- Estimate time complexity before coding.
 
 ### Target Complexity
 
-* `O(n)` or `O(n log n)` for `n ≤ 2e5`
-* `O(n^2)` only if `n ≤ 2000`
-* `O(2^n)` only if `n ≤ 20`
+- `O(n)` or `O(n log n)` for `n ≤ 2e5`
+- `O(n^2)` only if `n ≤ 2000`
+- `O(2^n)` only if `n ≤ 20`
 
 ### Memory & Efficiency
 
-* Preallocate memory when possible.
-* Avoid resizing containers inside loops.
-* Use static arrays when size is fixed and performance-critical.
+- Preallocate memory when possible.
+- Avoid resizing containers inside loops.
+- Use static arrays when size is fixed and performance-critical.
 
 # Anti-Patterns to Avoid
 
 ### Unnecessary Abstraction
 
-* Do **not** create functions for trivial logic.
-* Do **not** split logic if it reduces clarity.
+- Do **not** create functions for trivial logic.
+- Do **not** split logic if it reduces clarity.
 
 ### Redundant Variables
 
-* Do **not** store values used only once.
+- Do **not** store values used only once.
 
 ```cpp
 // Avoid
@@ -171,8 +171,8 @@ cout << a + b;
 
 ### Overuse of STL
 
-* Do **not** use `set` / `map` when `vector + sort` is sufficient.
-* Avoid complex containers when simpler ones work.
+- Do **not** use `set` / `map` when `vector + sort` is sufficient.
+- Avoid complex containers when simpler ones work.
 
 ### Unnecessary Copies
 
@@ -214,19 +214,19 @@ if (!cond2) return;
 
 ### Unnecessary Structs
 
-* Avoid `struct` for simple grouped values.
+- Avoid `struct` for simple grouped values.
 
 ### Overuse of Globals
 
-* Avoid global variables unless necessary.
+- Avoid global variables unless necessary.
 
 ### Ignoring Constraints
 
-* Do **not** start coding without complexity estimation.
+- Do **not** start coding without complexity estimation.
 
 ### Premature Optimization
 
-* Focus on correctness first, then optimize.
+- Focus on correctness first, then optimize.
 
 ### Debug Artifacts
 
@@ -237,7 +237,7 @@ cout << "debug" << x << "\n";
 
 ### Inconsistent Style
 
-* Do **not** mix naming conventions.
+- Do **not** mix naming conventions.
 
 ### Magic Numbers
 
@@ -275,10 +275,10 @@ int main() {
 
 Competitive programming requires:
 
-* Careful constraint analysis.
-* Strong pattern recognition.
-* Transforming brute force into structured logic.
-* Writing correct code quickly under pressure.
+- Careful constraint analysis.
+- Strong pattern recognition.
+- Transforming brute force into structured logic.
+- Writing correct code quickly under pressure.
 
 Clarity over cleverness. Performance over abstraction. Correctness over style.
 
