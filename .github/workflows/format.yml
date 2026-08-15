@@ -19,4 +19,4 @@ jobs:
           ref: ${{ github.head_ref || github.ref }}
 
       - name: Run autofmt
-        uses: area44/actions-autofmt@d2c585d7e412b237cde77b054c680835fc5d3999 # v0.1.0
+        uses: area44/autofmt-action@d2c585d7e412b237cde77b054c680835fc5d3999 # v0.1.0
